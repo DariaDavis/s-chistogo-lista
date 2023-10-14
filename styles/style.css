@@ -16,7 +16,7 @@ body {
   align-items: flex-start;
   background-color: #131313;
   color: white;
-  padding: 20px;
+  padding: 24px 20px;
 }
 
 .header__logo-image {
@@ -30,46 +30,50 @@ body {
   gap: 12px;
 }
 
+.header__menu-item {  
+  border-bottom: 1px solid white;
+  width: fit-content;
+}
+
+.header__menu-item_active {
+  border-bottom: none;
+}
+
 .header__menu-link {
   text-decoration: none;
   color: inherit;
-}
-
-.header__menu-item_active .header__menu-link {
-  border-bottom: 1px solid white;
+  line-height: 120%;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  background-color: #131313;
 }
 
 .content-section {
   box-sizing: border-box;
-  padding: 15px 0;
-
-  /* height: 100px; */
+  padding: 40px 20px;
 }
 
 .content-section_theme_dark {
   background-color: #131313;
-  color: white;
+  color: #F5F5F5;
 }
 
 .content-section_theme_bright {
   background-color: #FEE42A;
-  color: black;
+  color: #131313;
 }
 
 .cover {
   background-image: url(../images/cover.svg);
   background-repeat: no-repeat;
-  background-size: auto;
-  background-position: bottom;
+  background-size: 95% auto;
+  background-position-x: right;
+  background-position-y: bottom;
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
+  padding: 10px 20px 5px 20px;
 }
 
 .cover__title {
@@ -78,10 +82,7 @@ body {
   font-family: 'EB Garamond', 'Times New Roman', serif;
   font-size: 72px;
   font-weight: normal;
-  padding-right: 20px;
-}
-
-.cover__title .accent-span {
+  color: #FFF;
   line-height: 100%;
 }
 
@@ -97,6 +98,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding-top: 30px;
+  padding-bottom: 37px;
 }
 
 .intro__heading {
@@ -104,9 +107,14 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 0 20px;
   color: #CCC;
   line-height: 120%;
+}
+
+.intro__title {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .intro__date {
@@ -114,14 +122,16 @@ body {
 }
 
 .intro__main-text {
-  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  line-height: 135%;
 }
 
 .reasons {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding: 25px 20px;
 }
 
 .content-section__subtitle {
@@ -129,12 +139,13 @@ body {
   flex-direction: column;
   font-family: 'EB Garamond', 'Times New Roman', serif;
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 500;
+  line-height: 115%;
 }
 
 .content-section__introduction {
   font-size: 20px;
-  line-height: 27px;
+  line-height: 135%;
 }
 
 .content-section__list {
@@ -155,7 +166,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding: 25px 20px;
+  padding-bottom: 60px;
 }
 
 .how-to .cards-list {
@@ -192,6 +203,7 @@ body {
 .card__author-photo {
   width: 100px;
   height: 100px;
+  border-radius: 208px;
 }
 
 .card__author-name {
@@ -206,7 +218,8 @@ body {
 }
 
 .card__title {
-  font-family: 'EB Garamond';
+  font-family: 'EB Garamond', 'Times New Roman', serif;
+  font-weight: 500;
   font-size: 22px;
   line-height: 135%;
 }
@@ -238,4 +251,5 @@ body {
 .footer__links-link {
   text-decoration: none;
   color: #F5F5F5;
+  line-height: 125%;
 }
