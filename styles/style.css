@@ -30,7 +30,7 @@ body {
   gap: 12px;
 }
 
-.header__menu-item {  
+.header__menu-item {
   border-bottom: 1px solid white;
   width: fit-content;
 }
