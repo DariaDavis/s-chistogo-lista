@@ -249,6 +249,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 16px;
+  list-style-type: none;
 }
 
 .footer__links-link {
